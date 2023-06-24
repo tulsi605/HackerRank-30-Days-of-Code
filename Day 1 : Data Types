@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        int i;
+        double d;
+        String s;
+
+        // Create a Scanner object to read input from stdin
+        Scanner scanner = new Scanner(System.in);
+
+        // Read and initialize the variables
+        i = scanner.nextInt();
+        d = scanner.nextDouble();
+        scanner.nextLine(); // Read the newline character after the double
+        s = scanner.nextLine();
+
+        // Perform the operations
+        int sum1 = i + 4;
+        double sum2 = d + 4.0;
+        String concatenatedString = "HackerRank " + s;
+
+        // Print the results
+        System.out.println(sum1);
+        System.out.printf("%.1f\n", sum2);
+        System.out.println(concatenatedString);
+
+        // Close the Scanner object
+        scanner.close();
+    }
+}
