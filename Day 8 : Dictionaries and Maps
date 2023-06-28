@@ -1,1 +1,15 @@
+n = int(input())
+contact = {}
+for i in range(n):
+    text = input().split()
+    contact[text[0]] = text[1]
 
+while True:
+    try:
+        numbers = input()
+        if numbers in contact:
+            print(numbers+"="+contact[numbers])
+        else:
+            print("Not found")
+    except:
+        break
